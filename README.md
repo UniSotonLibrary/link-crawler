@@ -58,7 +58,7 @@ workflow to enable server log filtering.
 ## Github Actions Workflow
 
 The GitHub Actions workflow is in `library-link-crawler.yaml` that runs
-as a cron job monthly on the 13th day at 0100 UTC, or can be triggered
+as a cron job monthly on the 12th day at 0100 UTC, or can be triggered
 manually from Github.
 
 The Action workflow runs as an Ubuntu Linux container that has
