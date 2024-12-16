@@ -146,7 +146,7 @@ jobs:
         subject: ${{ steps.check_broken_links.outputs.broken_links_found == 'true' && 'FAO Carrie - Broken Links Found on Library Website' || 'FAO Carrie - No Broken Links Found on Library Website' }}
         html_body: ${{ env.STATUS_MESSAGE }} # Needs to be html to stop Outlook safelinks
         convert_markdown: true
-        attachments: ${{ env.ATTACHMENT }}
+        # attachments: ${{ env.ATTACHMENT }}
         to: ${{secrets.LIB_EMAIL_RECIPIENT}}
         cc: ${{secrets.EMAIL_RECIPIENT}}, ${{secrets.CC_EMAIL_RECIPIENT}}
         from: Library Linkchecker # ${{secrets.GMAIL_USERNAME}}
